@@ -1,0 +1,142 @@
+@use "../abstracts";
+
+
+.header {
+    background:var(--header-bg-color);
+    @include abstracts.breakpoint(lg){
+        width:auto;
+        background: var(--header-bg-color-lg);
+    }
+
+    @include abstracts.breakpoint(sm){
+        width: auto;
+    }
+
+}
+a{
+    text-decoration: none;
+
+}
+.top-bar {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    @include abstracts.breakpoint(lg){
+           justify-content: space-between;
+           padding: 16px 0;
+        }
+    &__logo{
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+    &__title {
+        //styleName: Bold 22;
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 145.455%;
+
+        //styleName: Bold 22;
+    }
+    &__more{
+        display: none;
+    
+        @include abstracts.breakpoint(lg){
+            display: block;
+        }
+    }
+    &__more-icon{
+       
+        border: 2px solid #FFFFFF
+    }
+}
+.navbar {
+    margin-left: 144px;
+   
+    @include abstracts.breakpoint(lg){
+        display: none;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+    }
+    &__link {
+        //styleName: Medium 15;
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 146.667%;
+        text-decoration: none;
+        
+    }
+    &__arrow{
+        margin-top: 3px;
+    }
+    
+        
+
+
+
+    }
+.top-act{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        gap: 20px;
+        @include abstracts.breakpoint(lg){
+           margin-left: 0;
+        }
+        @include abstracts.breakpoint(sm){
+            margin-left: 0;
+        }
+        
+        
+      
+        &__avatar{
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            display: block;
+
+
+        }
+        &__btn{
+            min-width: 50px;
+          
+            padding: 20px 30px;
+            border-radius: 6px;
+            background: #f8f8fb;
+            font-size: 1.8rem;
+            font-weight: 500;
+            display: inline-block;
+            margin: 0 auto;
+            @include abstracts.breakpoint(lg){
+                min-width: 10px;
+                padding: 10px 10px;
+            
+             }
+            
+    
+           
+        }
+        :nth-child(2){
+            background: orange;
+            border-radius: 8px;
+
+            
+
+        }
+        :nth-child(1){
+            background: transparent;
+            @include abstracts.breakpoint(lg){
+                display: none;
+            }
+        }
+        
+        
+
+    }
+    

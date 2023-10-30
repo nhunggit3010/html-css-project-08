@@ -1,0 +1,16 @@
+@use "../abstracts";
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+   
+}
+.top-bar{
+    &__img{
+        @include abstracts.breakpoint(lg){
+            width: 24px;
+        }
+    }
+    
+}
